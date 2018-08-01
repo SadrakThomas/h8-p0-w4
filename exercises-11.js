@@ -6,7 +6,7 @@ function changeMe(arr) {
       artist.firstName = arr[i][0]
       artist.lastname = arr[i][1]
       artist.gender = arr[i][2]
-      if(arr[i][3] === undefined){
+      if(arr[i][3] === ' ' || arr[i][3] >= 2018 || arr[i][3] === undefined){
         artist.age = 'Invalid Birth Year'
       }else{
         artist.age = 2018 - arr[i][3]
